@@ -12,7 +12,7 @@ const client = new Client({
 const fortDecimals = new BN(10).pow(9)
 
 const provider = new ethers.providers.JsonRpcProvider('https://api.avax.network/ext/bc/C/rpc')
-const sale = new ethers.Contract('0xaAF9a29c6BEAa9E3E4715c4698Be8830226454Fa', require('./abis/sale.json'), provider)
+const sale = new ethers.Contract('0x82756cb8B251bfB10Acd7931756a1edb7f253850', require('./abis/sale.json'), provider)
 
 client.login(process.env.APP_TOKEN)
 
